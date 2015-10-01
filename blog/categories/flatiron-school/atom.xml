@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Flatiron | My Flatiron Experience]]></title>
-  <link href="http://mbukantz.github.io/blog/categories/flatiron/atom.xml" rel="self"/>
+  <title><![CDATA[Category: flatiron_school | My Flatiron Experience]]></title>
+  <link href="http://mbukantz.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-09-28T22:33:15-04:00</updated>
+  <updated>2015-10-01T13:03:58-04:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -18,7 +18,7 @@
     <link href="http://mbukantz.github.io/blog/2015/09/28/my-first-post-on-octopress/"/>
     <updated>2015-09-28T22:28:06-04:00</updated>
     <id>http://mbukantz.github.io/blog/2015/09/28/my-first-post-on-octopress</id>
-    <content type="html"><![CDATA[<p>&ldquo;Hello, World.&rdquo;</p>
+    <content type="html"><![CDATA[<p>&ldquo;Hello, World.  Testing&rdquo;</p>
 ]]></content>
   </entry>
   

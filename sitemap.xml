@@ -8,12 +8,15 @@
     <loc>http://mbukantz.github.io/blog/archives/</loc>
   </url>
   <url>
+    <loc>http://mbukantz.github.io/archives/</loc>
+  </url>
+  <url>
+    <loc>http://mbukantz.github.io/blog/</loc>
+  </url>
+  <url>
     <loc>http://mbukantz.github.io/</loc>
   </url>
   <url>
-    <loc>http://mbukantz.github.io/blog/categories/flatiron/</loc>
-  </url>
-  <url>
-    <loc>http://mbukantz.github.io/blog/categories/school/</loc>
+    <loc>http://mbukantz.github.io/blog/categories/flatiron-school/</loc>
   </url>
 </urlset>
