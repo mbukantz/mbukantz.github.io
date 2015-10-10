@@ -102,6 +102,84 @@ $(document).ready(
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2015/10/10/unary-operators-in-ruby/">
+		
+			Unary Operators in Ruby</a>
+	</h2>
+	<div class="entry-content">
+		<p>As I begin the third week in the Flatiron School&rsquo;s immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3&hellip;2&hellip;1!</p>
+
+<p>There is only one ternary operator in Ruby, which is a conditional expression (if/else) pared down to one line.  Ruby, as a language, is always looking to simplify the syntax of its code and allow us to build clean, concise code.  Here is a snapshot of how a ternary operator behaves:</p>
+
+<center><img src="../images/ternary_screenshot.png"></center>
+
+
+<p>Next, I&rsquo;ll briefly touch on binary operators.  There are many instances where syntactic sugar in Ruby displays cleaner code at the expense of new programmers understanding what is truly happening.  The most simplistic representation of a binary operator would be addition.  When addition is displayed in Ruby, it appears as &ldquo;a + b&rdquo;.  However, it is actually calling the &ldquo;+&rdquo; method on b, or a.+(b).  &ldquo;a&rdquo; and &ldquo;b&rdquo; represent the two parties in the binary operator.</p>
+
+<center><img src="../images/binary_screenshot.png"></center>
+
+
+<p>Now, let&rsquo;s get to the meet of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.</p>
+
+<p><b>Opposite Operator (!)</b></p>
+
+<p>The opposite operator is used to represent the opposite of whatever it is placed in front of.  For example, !true is equal to false and !false is equal to true.  You can put ! in front of an equal sign to represent &ldquo;not equal to&rdquo;, and you can even place it in front of a method to test equality.  Here is some code in irb to indicate these concepts:</p>
+
+<center><img src="../images/negative_operator.png"></center>
+
+
+<p><b>Positive/Negative Operators (+/-)</b></p>
+
+<p>When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.</p>
+
+<p><b>The Bitwise Complement (~)</b></p>
+
+<p>The bitwise complement operator is slightly more involved than the previous three operators.  A number is depicted by 8 bits.  For example, the integer 2 is represented by 0000 0010.  When we run the ~2 operator, it inverts all of the 0&rsquo;s and 1&rsquo;s and adds one to the bitwise value.  The resulting bitwise value is 1111 1101.  This represents -3.  If you were to run the ~-3, it would return 2 as the complement.  Here is a snapshot in irb:</p>
+
+<center><img src="../images/bitwise_complement.png"></center>
+
+
+<p><b><u>Unary Operator Reassignment</u></b></p>
+
+<p>One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class &ldquo;ReassignmentString&rdquo; that inherits from the &ldquo;String&rdquo; class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:</p>
+
+<center><img src="../images/reassignment.png"></center>
+
+
+<center><img src="../images/reassignment_output.png"></center>
+
+
+<p>In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-10-10T00:00:00-04:00" pubdate data-updated="true"></time></div>
+	
+
+
+	
+</div></article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2015/09/28/my-first-post-on-octopress/">
 		
 			My First Post on Octopress</a>
