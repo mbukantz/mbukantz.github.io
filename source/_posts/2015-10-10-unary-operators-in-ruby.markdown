@@ -16,7 +16,7 @@ Next, I'll briefly touch on binary operators.  There are many instances where sy
 
 <center><img src="../images/binary_screenshot.png"></center>
 
-Now, let's get to the meet of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.  
+Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.  
 
 <b>Opposite Operator (!)</b>
 
