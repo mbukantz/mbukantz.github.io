@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron_school | The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-10-26T22:06:27-04:00</updated>
+  <updated>2015-10-26T22:06:52-04:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -51,7 +51,7 @@
 <p>So, what would be an example of when you would need to use a Proc?  This would usually occur when you need to call back multiple values within a method.  This is best demonstrated in another example.  Below, there is a method call_twice that takes an argument of a hash of "procs".  First, we call the :first_key('s) value of the procs hash. Next we puts out "sunk your".  Last, we call the :last_key('s) value of the procs hash.  When we pass a hash with Proc values into the call_twice method, we get the output we desire:</p>
 
 
-<p><img src="../images/battleship.png"></p>
+
 
 <p>To summarize when to use Procs over blocks, there are two main reasons:</p>
 
