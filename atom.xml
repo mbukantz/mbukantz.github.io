@@ -4,7 +4,7 @@
   <title><![CDATA[The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-10-26T21:51:24-04:00</updated>
+  <updated>2015-10-26T22:05:44-04:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -53,7 +53,7 @@
 
 <p><img src="../images/battleship.png"></p>
 
-<p>To summarize when to use Procs over blocks, there are two mean reasons:</p>
+<p>To summarize when to use Procs over blocks, there are two main reasons:</p>
 
 
 
