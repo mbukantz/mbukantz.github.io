@@ -3,7 +3,7 @@ layout: post
 title: "Unary Operators in Ruby"
 date: 2015-10-10 10:15:36 -0400
 comments: true
-categories:Flatiron_School
+categories:flatiron_School
 ---
 
 As I begin the third week in the Flatiron School's immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3...2...1!

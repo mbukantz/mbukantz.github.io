@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Blocks, Procs, and Lambdas... oh my!"
+date: 2015-10-25 16:01:21 -0400
+comments: true
+categories: flatiron_school
+---
+
+<p>Before I enrolled in the Flatiron School, my introduction to programming was through websites like Codecademy and Ruby Monk.  I was doing whatever I could to scrape the surface of coding while trying to entertain myself through the endless boredom of my job.  Two of the topics that were heavily reinforced on Ruby Monk were Procs and Lambdas.  While I found traditional blocks to be intuitive and straightforward, I found Procs and Lambdas to be confusing and abstract.  I was surprised to find out through our first four weeks at the Flatiron School that neither were mentioned in detail.  I did see a few Procs in different rspec tests, but it was not imperative to understand the inner workings of them.</p>
+
+<p>With four weeks of experience under my belt, I wanted to go back and investigate blocks, Procs, and Lambdas, three <em>'closures'</em> in Ruby.</p> 
+
+<h3>Procs as Objects versus Blocks</h3>
+
+<p>While blocks are syntactically straightforward, they sometimes are guilty of violating DRY (Don't Repeat Yourself!).  This is where Procs come into the picture.  Short for Procedures, a Proc is a reusable block.  In addition, a Proc is an object, therefore it can be saved as a variable.  To make this as simple as possible, a block is technically a Proc that cannot be saved or reused.  A block is a stripped-down and temporary version of a Proc.  Let's take a look at an example of how a Proc can behave:</p>
+
+<img src="../images/Proc_screenshot.png">
+
+<p>In the screenshot above, we are given an array.  Next, we set a variable proc equal to a new Proc <b>object</b> that passes a block that will multiply x by 2.  After setting the proc variable to the object, we map the array to the proc.  The output, as we would expect, is an array of x*2 values.</p>
+
+<p>Procs can also be "called" on with arguments from the block.  Here is a snapshot of what I mean: </p>
+
+<img src="../images/Proc_call.png">
+
+<p>So, what would be an example of when you would need to use a Proc?  This would usually occur when you need to call back multiple values within a method.  This is best demonstrated in another example.  Below, there is a method call_twice that takes an argument of a hash of "procs".  First, we call the :first_key('s) value of the procs hash. Next we puts out "sunk your".  Last, we call the :last_key('s) value of the procs hash.  When we pass a hash with Proc values into the call_twice method, we get the output we desire:</p>
+
+<img src="../images/Battleship.png">
+
+<p>To summarize when to use Procs over blocks, there are two main reasons:</p>
+
+<ol>
+  <li>You want to reuse a block of code multiple times.</li>
+  <li>The method that you are in will have more than one call back.</li>
+</ol>
+
+<h3>Procs versus Lambdas</h3>
+
+<p>Lastly, I wanted to touch on the topic of Lambdas.  On the surface, Lamdas appear to behave identically to Procs.  In fact, Lambdas are members of the Proc class.  However, there are two subtle differences.</p>
+
+<ol>
+  <li>Lambdas check the number of arguments, while Procs do not.  In the example below, we have set lam equal to a Lambda that puts out the argument passed to it.  When we call the Lambda with one argument, it appropriately outputs the value.  However, when we call the Lambda with 0 or 3 arguments, the Lambda errors out.  This is not demonstrated by Procs, which do not care if they are passed the wrong number of arguments.</li><br>
+
+  <img src="../images/lambda_args.png">
+
+  <img src="../images/proc_args.png"><br><br>
+
+  <li>Lambdas and Procs treat the 'return' keyword differently.  When the 'return' keyword is inside of a Lambda, it will trigger the code right outside of the Lambda code.  When the 'return' keyword is inside of a proc, it triggers the code outside of the <b>method</b>.  Here is an example of the difference:</li>
+</ol>
+
+<img src="../images/lambdaprocreturn.png">
+
+<p>In this post, we have taken a look at Procs versus blocks and Procs versus Lambdas.  Procs are used instead of Blocks when you want to reuse a portion of code or your method will have more than one call back value.  Lambdas are the same as Procs except for two subtle differences discussed above.  I hope you now have some <em>'closure'</em>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
