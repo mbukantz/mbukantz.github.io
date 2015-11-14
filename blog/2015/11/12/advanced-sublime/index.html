@@ -1,0 +1,245 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>Sublime 201  | The Flatiron Experience</title>
+
+<meta name="author" content="Michael Bukantz"> 
+
+<meta name="description" content="Technical blog of my experience at Flatiron School and beyond"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="The Flatiron Experience" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">The Flatiron Experience</a></h1>
+<h4>A technical blog documenting my journey</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:mbukantz.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Sublime 201</h2>
+	<div class="entry-content"><p>In our second week at Flatiron School, Jeff <a href="http://jeffslutzky.github.io/blog/2015/10/04/sublime-hints-and-shortcuts/">blogged</a> some cool tips and tricks about using Sublime text editor.  Austin also <a href="http://gilmoursa.github.io/blog/Package%20Control/">blogged</a> about using Package Control to enhance the Sublime experience.  After using Sublime for a couple of months and doing some thorough research, I wanted to share a second edition of useful Sublime hints, shortcuts, and packages.</p>
+
+
+
+
+<h3>Selectors</h3>
+
+
+
+
+<p>You can select a single line of text by clicking and dragging with your trackpad, and you can do the same for multiple snippets of text by holding down your command key.  However, there are several shortcuts that Sublime provides us to more efficiently select text.  Here are a few examples:</p>
+
+
+<p>  <ul>
+    <li>Command + D - Select a single word or select the next instance of the word</li>
+    <li>Command + L - Select the line that you are on</li>
+    <li>Command + Control + M - Select anything within the brackets</li>
+    <li>Command + Control + G - Select any instance of the highlighted text</li>
+  </ul><br></p>
+
+<h3>Command Palette</h3>
+
+
+
+
+<p>If you press Command + Shift + P in Sublime, it will open up the Command Palette.  The Command Palette will allow you to do many tasks such as installing packages, renaming a file, or saving all files.  With its easy to use search bar, the Command Palette is a great tool for developers.  Here is a snapshot of how to search for installing new packages:</p>
+
+
+<p><img src="../images/install_packages.png"><br><br></p>
+
+<h3>Advanced New File (Package Control)</h3>
+
+
+
+
+<p>Speaking of package control, there is a neat package that allows you to create new files straight from Sublime.  As opposed to going to terminal to "touch" a new file, you can download the "Advanced New File" package from the Command Palette.  By clicking Command + Option + n, you can enter a new file name and/or path from the bottom of Sublime.</p>
+
+
+<p><br></p>
+
+<h3>Spell Checker</h3>
+
+
+<p>  <p>While I was writing this blog post, I was catching spelling errors left and right.  After a quick Google search, I discovered that you can enable spell check within Sublime.  In order to add spell checker when writing a blog post or another text-heavy document, you can append spell checker to the user preferences by copying the following command:</p></p>
+
+<p><i>&ldquo;spell_check&rdquo;: true,</i></p>
+
+<h3>CSS Sorting</h3>
+
+
+
+
+<p>Another nice to know feature in Sublime is sorting CSS stylesheets.  This can come in handy when you have long selector statements, as it is much easier to read and find the selector you are looking for when it is alphabetized.  Here is an example of before and after snapshots:</p>
+
+
+<p><b>Before:</b><br><img src="../images/png_before.png"><br><br>
+<b>After: </b><br><img src="../images/png_after.png"></p>
+
+<h3>Switching Tabs</h3>
+
+
+<p>When working on projects with many directories and files, like a Rails app, it sometimes is hard to navigate between each file.  However, there are some helpful commands that allow for easier navigation:</p>
+
+<ul>
+  <li>Command T- Selects all tabs that are currently open and allows searching through each tab</li>
+  <li>Command + Shift + [ - Will bring you to the previous tab</li>
+  <li>Command + Shift + }- Will bring you to the next tab</li>
+</ul>
+
+
+<p><br></p>
+
+<h3>Cross-file editing</h3>
+
+
+<p>Lets say you want to change a variable in a project, but this variable is referenced in several files in several instances.  This is where cross-file editing in Sublime can be very useful.  If you hit Command + Shift + F in Sublime, you are able to find all instances of the variable.  In the &ldquo;Where&rdquo; section, you would classify the folders, files, and filters you would like to apply your to your replace function.  Lastly, you can replace with the updated variable.  Here is a snapshot of how this would look:</p>
+
+<p><br><img src="../images/cross-file.png"><br></p>
+
+<p>In conclusion, I hope this was a helpful overview of some neat Sublime shorcuts, tips, and packages.  I will leave you with one more tool, <a href="https://github.com/titoBouzout/SideBarEnhancements/tree/st3">SideBar Enhancements</a>, which will also improve your workflow.</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-11-12T20:39:08-05:00" pubdate data-updated="true"></time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/flatiron-school/'>flatiron_school</a>
+
+</div>
+
+
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Michael Bukantz
+
+<br>
+Powered by Octopress.
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>
