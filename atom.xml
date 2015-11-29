@@ -4,7 +4,7 @@
   <title><![CDATA[The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-11-14T12:37:03-05:00</updated>
+  <updated>2015-11-28T22:36:07-05:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -14,90 +14,135 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Ember and TVs]]></title>
+    <link href="http://mbukantz.github.io/blog/2015/11/28/ember-and-tvs/"/>
+    <updated>2015-11-28T21:50:06-05:00</updated>
+    <id>http://mbukantz.github.io/blog/2015/11/28/ember-and-tvs</id>
+    <content type="html"><![CDATA[<p>
+  I was watching a <a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">video</a> from a talk by Robin Ward at the Embergarten Saturday Symposium in 2014, and I was intrigued by his discussion about mixing Ember and TV.  In the past week, our cohort has been working within the Ember framework to build simple web applications that refresh on the client side without reloading the entire page.  In Robin's talk, he goes into detail about some of the history of browser applications before he gets to the TV part, so I will summarize some of the key points.
+</p>
+
+<h3>History</h3>
+<ul>
+  <li>There is only one point in civilization's history that connects everything together</li>
+  <li>The problem: applications are platform specific</li>
+  <li>The dream: universal applications (platform agnostic)
+  <ul>
+    <li>Java come close, but it is ultimately huge failure in accomplishing universal applications</li>
+    <li>JavaScript is not the "hero we needed, but the one we deserved"</li>
+  </ul></li>
+  <li>We now have platform that allows us to "write once, run anywhere"</li>
+ <li>Robin doesn't like the term "Single Page Applications" and he prefers "Browser Applications"<ul>
+   <li>It is same as describing car as "horseless carriage"</li>
+   <li>It's describing what it isn't as opposed to what it is</li>
+ </ul></li>
+</ul>
+
+<h3>Browser Applications</h3>
+  <ol>
+    <li>Has access to DOM</li>
+    <li>Runs in web browser</li>
+    <li>Written in JavaScript</li>
+  </ol>
+  <ul>
+    <li>Ember</li>
+    <li>Angular</li>
+  </ul>
+
+<h4>Examples:</h4>
+  <ul>
+    <li>Social: Gmail, Slack</li>
+    <li>Games: 2048</li>
+    <li>Video: Vine, Twitch</li>
+    <li>Atom.io</li>
+  </ul>
+
+  <h3>Ember and Televisions</h3>
+  <ul>
+    <li>Ember is great platform for writing browser applications</li>
+    <li>TVs can run web browsers</li>
+    <li>Ember should be great for writing an application that runs on a TV</li>
+  </ul>
+
+  <p>
+    We are not talking about a smart TV, but more in the line of ChromeCast or Apple TV.  Using Ember allows us to use URLs, since you can pass a URL around from one device to another seamlessly.  In addition, if your TV application is linked up to a website, you can make updates to the application whenever you want.  Lastly, TVs are now run on phones, tablets, and other devices, so the concept of a television has evolved from the traditional sense of the word.  Here is a <a href="http://embertv.eviltrout.com/browse/root">demo</a> that Robin created in Ember.  While the demo is tested with a keyboard and mouse, it should theoretically simulate using a traditional remote control.
+  </p>
+
+  <p>
+    Within Ember, Robin touches on using large fonts with <em>emphasis</em> markers.  In addition, each page (movies, tv shows,etc.) should have separate routes set in the router.  He stresses the use of Ember components to build out projects like the demo application posted above.  As technology continues to evolve, our views on tradiitonal devices such as televisions must also evolve.  Ember has much more functionality than I even knew.
+  </p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Sublime 201: Tips, Tricks, and Packages]]></title>
     <link href="http://mbukantz.github.io/blog/2015/11/12/advanced-sublime/"/>
     <updated>2015-11-12T20:39:08-05:00</updated>
     <id>http://mbukantz.github.io/blog/2015/11/12/advanced-sublime</id>
     <content type="html"><![CDATA[<p>In our second week at Flatiron School, Jeff <a href="http://jeffslutzky.github.io/blog/2015/10/04/sublime-hints-and-shortcuts/">blogged</a> some cool tips and tricks about using Sublime text editor.  Austin also <a href="http://gilmoursa.github.io/blog/Package%20Control/">blogged</a> about using Package Control to enhance the Sublime experience.  After using Sublime for a couple of months and doing some thorough research, I wanted to share a second edition of useful Sublime hints, shortcuts, and packages.</p>
 
-
-
-
 <h3>Selectors</h3>
-
-
-
 
 <p>You can select a single line of text by clicking and dragging with your trackpad, and you can do the same for multiple snippets of text by holding down your command key.  However, there are several shortcuts that Sublime provides us to more efficiently select text.  Here are a few examples:</p>
 
-
-<p>  <ul>
+  <ul>
     <li>Command + D - Select a single word or select the next instance of the word</li>
     <li>Command + L - Select the line that you are on</li>
-    <li>Command + Control + M - Select anything within the brackets</li>
+    <li>Control + Shift + M - Select anything within the brackets</li>
     <li>Command + Control + G - Select any instance of the highlighted text</li>
-  </ul><br></p>
+  </ul><br>
 
 <h3>Command Palette</h3>
 
-
-
-
 <p>If you press Command + Shift + P in Sublime, it will open up the Command Palette.  The Command Palette will allow you to do many tasks such as installing packages, renaming a file, or saving all files.  With its easy to use search bar, the Command Palette is a great tool for developers.  Here is a snapshot of how to search for installing new packages:</p>
 
-
-<p><img src="../images/install_packages.png"><br><br></p>
+<img src="../images/install_packages.png"><br><br>
 
 <h3>Advanced New File (Package Control)</h3>
 
-
-
-
-<p>Speaking of package control, there is a neat package that allows you to create new files straight from Sublime.  As opposed to going to terminal to "touch" a new file, you can download the "Advanced New File" package from the Command Palette.  By clicking Command + Option + n, you can enter a new file name and/or path from the bottom of Sublime.</p>
-
-
-<p><br></p>
+<p>Speaking of package control, there is a neat package that allows you to create new files straight from Sublime.  As opposed to going to terminal to "touch" a new file, you can download the "Advanced New File" package from the Command Palette.  By clicking Command + Option + n, you can enter a new file name and/or path from the bottom of Sublime.</p><br>
 
 <h3>Spell Checker</h3>
 
+  <p>While I was writing this blog post, I was catching spelling errors left and right.  After a quick Google search, I discovered that you can enable spell check within Sublime.  In order to add spell checker when writing a blog post or another text-heavy document, you can append spell checker to the user preferences by copying the following command:</p>
 
-<p>  <p>While I was writing this blog post, I was catching spelling errors left and right.  After a quick Google search, I discovered that you can enable spell check within Sublime.  In order to add spell checker when writing a blog post or another text-heavy document, you can append spell checker to the user preferences by copying the following command:</p></p>
-
-<p><i>&ldquo;spell_check&rdquo;: true,</i></p>
+<i>"spell_check": true,</i>
 
 <h3>CSS Sorting</h3>
 
-
-
-
 <p>Another nice to know feature in Sublime is sorting CSS stylesheets.  This can come in handy when you have long selector statements, as it is much easier to read and find the selector you are looking for when it is alphabetized.  Here is an example of before and after snapshots:</p>
 
-
-<p><b>Before:</b><br><img src="../images/png_before.png"><br><br>
-<b>After: </b><br><img src="../images/png_after.png"></p>
+<b>Before:</b><br><img src="../images/png_before.png"><br><br>
+<b>After: </b><br><img src="../images/png_after.png">
 
 <h3>Switching Tabs</h3>
 
-
-<p>When working on projects with many directories and files, like a Rails app, it sometimes is hard to navigate between each file.  However, there are some helpful commands that allow for easier navigation:</p>
+When working on projects with many directories and files, like a Rails app, it sometimes is hard to navigate between each file.  However, there are some helpful commands that allow for easier navigation:
 
 <ul>
   <li>Command T- Selects all tabs that are currently open and allows searching through each tab</li>
   <li>Command + Shift + [ - Will bring you to the previous tab</li>
   <li>Command + Shift + }- Will bring you to the next tab</li>
-</ul>
+</ul><br>
 
-
-<p><br></p>
 
 <h3>Cross-file editing</h3>
+Lets say you want to change a variable in a project, but this variable is referenced in several files in several instances.  This is where cross-file editing in Sublime can be very useful.  If you hit Command + Shift + F in Sublime, you are able to find all instances of the variable.  In the "Where" section, you would classify the folders, files, and filters you would like to apply your to your replace function.  Lastly, you can replace with the updated variable.  Here is a snapshot of how this would look:
+
+<br><img src="../images/cross-file.png"><br>
+
+In conclusion, I hope this was a helpful overview of some neat Sublime shorcuts, tips, and packages.  I will leave you with one more tool, <a href="https://github.com/titoBouzout/SideBarEnhancements/tree/st3">SideBar Enhancements</a>, which will also improve your workflow.  
 
 
-<p>Lets say you want to change a variable in a project, but this variable is referenced in several files in several instances.  This is where cross-file editing in Sublime can be very useful.  If you hit Command + Shift + F in Sublime, you are able to find all instances of the variable.  In the &ldquo;Where&rdquo; section, you would classify the folders, files, and filters you would like to apply your to your replace function.  Lastly, you can replace with the updated variable.  Here is a snapshot of how this would look:</p>
 
-<p><br><img src="../images/cross-file.png"><br></p>
 
-<p>In conclusion, I hope this was a helpful overview of some neat Sublime shorcuts, tips, and packages.  I will leave you with one more tool, <a href="https://github.com/titoBouzout/SideBarEnhancements/tree/st3">SideBar Enhancements</a>, which will also improve your workflow.</p>
+
+
+
+
+
+
+
 ]]></content>
   </entry>
   
@@ -108,61 +153,34 @@
     <id>http://mbukantz.github.io/blog/2015/10/25/blocksprocsandlamdas</id>
     <content type="html"><![CDATA[<p>Before I enrolled in the Flatiron School, my introduction to programming was through websites like Codecademy and Ruby Monk.  I was doing whatever I could to scrape the surface of coding while trying to entertain myself through the endless boredom of my job.  Two of the topics that were heavily reinforced on Ruby Monk were Procs and Lambdas.  While I found traditional blocks to be intuitive and straightforward, I found Procs and Lambdas to be confusing and abstract.  I was surprised to find out through our first four weeks at the Flatiron School that neither were mentioned in detail.  I did see a few Procs in different rspec tests, but it was not imperative to understand the inner workings of them.</p>
 
-
-
-
-<p>With four weeks of experience under my belt, I wanted to go back and investigate blocks, Procs, and Lambdas, three <em>'closures'</em> in Ruby.</p>
-
-
-<p></p>
+<p>With four weeks of experience under my belt, I wanted to go back and investigate blocks, Procs, and Lambdas, three <em>'closures'</em> in Ruby.</p> 
 
 <h3>Procs as Objects versus Blocks</h3>
 
-
-
-
 <p>While blocks are syntactically straightforward, they sometimes are guilty of violating DRY (Don't Repeat Yourself!).  This is where Procs come into the picture.  Short for Procedures, a Proc is a reusable block.  In addition, a Proc is an object, therefore it can be saved as a variable.  To make this as simple as possible, a block is technically a Proc that cannot be saved or reused.  A block is a stripped-down and temporary version of a Proc.  Let's take a look at an example of how a Proc can behave:</p>
 
-
-<p><img src="../images/Proc_screenshot.png"></p>
+<img src="../images/Proc_screenshot.png">
 
 <p>In the screenshot above, we are given an array.  Next, we set a variable proc equal to a new Proc <b>object</b> that passes a block that will multiply x by 2.  After setting the proc variable to the object, we map the array to the proc.  The output, as we would expect, is an array of x*2 values.</p>
 
-
-
-
 <p>Procs can also be "called" on with arguments from the block.  Here is a snapshot of what I mean: </p>
 
-
-<p><img src="../images/Proc_call.png"></p>
+<img src="../images/Proc_call.png">
 
 <p>So, what would be an example of when you would need to use a Proc?  This would usually occur when you need to call back multiple values within a method.  This is best demonstrated in another example.  Below, there is a method call_twice that takes an argument of a hash of "procs".  First, we call the :first_key('s) value of the procs hash. Next we puts out "sunk your".  Last, we call the :last_key('s) value of the procs hash.  When we pass a hash with Proc values into the call_twice method, we get the output we desire:</p>
 
-
-<p><img src="../images/Battleship.png"></p>
+<img src="../images/Battleship.png">
 
 <p>To summarize when to use Procs over blocks, there are two main reasons:</p>
-
-
-
 
 <ol>
   <li>You want to reuse a block of code multiple times.</li>
   <li>The method that you are in will have more than one call back.</li>
 </ol>
 
-
-
-
 <h3>Procs versus Lambdas</h3>
 
-
-
-
 <p>Lastly, I wanted to touch on the topic of Lambdas.  On the surface, Lamdas appear to behave identically to Procs.  In fact, Lambdas are members of the Proc class.  However, there are two subtle differences.</p>
-
-
-
 
 <ol>
   <li>Lambdas check the number of arguments, while Procs do not.  In the example below, we have set lam equal to a Lambda that puts out the argument passed to it.  When we call the Lambda with one argument, it appropriately outputs the value.  However, when we call the Lambda with 0 or 3 arguments, the Lambda errors out.  This is not demonstrated by Procs, which do not care if they are passed the wrong number of arguments.</li><br>
@@ -174,10 +192,22 @@
   <li>Lambdas and Procs treat the 'return' keyword differently.  When the 'return' keyword is inside of a Lambda, it will trigger the code right outside of the Lambda code.  When the 'return' keyword is inside of a proc, it triggers the code outside of the <b>method</b>.  Here is an example of the difference:</li>
 </ol>
 
-
-<p><img src="../images/lambdaprocreturn.png"></p>
+<img src="../images/lambdaprocreturn.png">
 
 <p>In this post, we have taken a look at Procs versus blocks and Procs versus Lambdas.  Procs are used instead of Blocks when you want to reuse a portion of code or your method will have more than one call back value.  Lambdas are the same as Procs except for two subtle differences discussed above.  I hope you now have some <em>'closure'</em>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -189,49 +219,44 @@
     <link href="http://mbukantz.github.io/blog/2015/10/10/unary-operators-in-ruby/"/>
     <updated>2015-10-10T00:00:00-04:00</updated>
     <id>http://mbukantz.github.io/blog/2015/10/10/unary-operators-in-ruby</id>
-    <content type="html"><![CDATA[<p>As I begin the third week in the Flatiron School&rsquo;s immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3&hellip;2&hellip;1!</p>
+    <content type="html"><![CDATA[As I begin the third week in the Flatiron School's immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3...2...1!
 
-<p>There is only one ternary operator in Ruby, which is a conditional expression (if/else) pared down to one line.  Ruby, as a language, is always looking to simplify the syntax of its code and allow us to build clean, concise code.  Here is a snapshot of how a ternary operator behaves:</p>
+There is only one ternary operator in Ruby, which is a conditional expression (if/else) pared down to one line.  Ruby, as a language, is always looking to simplify the syntax of its code and allow us to build clean, concise code.  Here is a snapshot of how a ternary operator behaves:
 
 <center><img src="../images/ternary_screenshot.png"></center>
 
-
-<p>Next, I&rsquo;ll briefly touch on binary operators.  There are many instances where syntactic sugar in Ruby displays cleaner code at the expense of new programmers understanding what is truly happening.  The most simplistic representation of a binary operator would be addition.  When addition is displayed in Ruby, it appears as &ldquo;a + b&rdquo;.  However, it is actually calling the &ldquo;+&rdquo; method on b, or a.+(b).  &ldquo;a&rdquo; and &ldquo;b&rdquo; represent the two parties in the binary operator.</p>
+Next, I'll briefly touch on binary operators.  There are many instances where syntactic sugar in Ruby displays cleaner code at the expense of new programmers understanding what is truly happening.  The most simplistic representation of a binary operator would be addition.  When addition is displayed in Ruby, it appears as "a + b".  However, it is actually calling the "+" method on b, or a.+(b).  "a" and "b" represent the two parties in the binary operator.
 
 <center><img src="../images/binary_screenshot.png"></center>
 
+Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.  
 
-<p>Now, let&rsquo;s get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.</p>
+<b>Opposite Operator (!)</b>
 
-<p><b>Opposite Operator (!)</b></p>
-
-<p>The opposite operator is used to represent the opposite of whatever it is placed in front of.  For example, !true is equal to false and !false is equal to true.  You can put ! in front of an equal sign to represent &ldquo;not equal to&rdquo;, and you can even place it in front of a method to test equality.  Here is some code in irb to indicate these concepts:</p>
+The opposite operator is used to represent the opposite of whatever it is placed in front of.  For example, !true is equal to false and !false is equal to true.  You can put ! in front of an equal sign to represent "not equal to", and you can even place it in front of a method to test equality.  Here is some code in irb to indicate these concepts:
 
 <center><img src="../images/negative_operator.png"></center>
 
+<b>Positive/Negative Operators (+/-)</b>
 
-<p><b>Positive/Negative Operators (+/-)</b></p>
+When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.  
 
-<p>When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.</p>
+<b>The Bitwise Complement (~)</b>
 
-<p><b>The Bitwise Complement (~)</b></p>
-
-<p>The bitwise complement operator is slightly more involved than the previous three operators.  A number is depicted by 8 bits.  For example, the integer 2 is represented by 0000 0010.  When we run the ~2 operator, it inverts all of the 0&rsquo;s and 1&rsquo;s and adds one to the bitwise value.  The resulting bitwise value is 1111 1101.  This represents -3.  If you were to run the ~-3, it would return 2 as the complement.  Here is a snapshot in irb:</p>
+The bitwise complement operator is slightly more involved than the previous three operators.  A number is depicted by 8 bits.  For example, the integer 2 is represented by 0000 0010.  When we run the ~2 operator, it inverts all of the 0's and 1's and adds one to the bitwise value.  The resulting bitwise value is 1111 1101.  This represents -3.  If you were to run the ~-3, it would return 2 as the complement.  Here is a snapshot in irb:
 
 <center><img src="../images/bitwise_complement.png"></center>
 
+<b><u>Unary Operator Reassignment</u></b> 
 
-<p><b><u>Unary Operator Reassignment</u></b></p>
-
-<p>One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class &ldquo;ReassignmentString&rdquo; that inherits from the &ldquo;String&rdquo; class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:</p>
+One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class "ReassignmentString" that inherits from the "String" class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:
 
 <center><img src="../images/reassignment.png"></center>
-
-
 <center><img src="../images/reassignment_output.png"></center>
 
+In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.   
 
-<p>In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.</p>
+
 ]]></content>
   </entry>
   
@@ -240,7 +265,7 @@
     <link href="http://mbukantz.github.io/blog/2015/09/28/my-first-post-on-octopress/"/>
     <updated>2015-09-28T22:28:06-04:00</updated>
     <id>http://mbukantz.github.io/blog/2015/09/28/my-first-post-on-octopress</id>
-    <content type="html"><![CDATA[<p>&ldquo;Hello, World.  Testing&rdquo;</p>
+    <content type="html"><![CDATA["Hello, World.  Testing"
 ]]></content>
   </entry>
   

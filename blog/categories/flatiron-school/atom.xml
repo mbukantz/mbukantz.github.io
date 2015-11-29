@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron_school | The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-11-14T12:37:03-05:00</updated>
+  <updated>2015-11-28T22:36:07-05:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -34,7 +34,7 @@
 <p>  <ul>
     <li>Command + D - Select a single word or select the next instance of the word</li>
     <li>Command + L - Select the line that you are on</li>
-    <li>Command + Control + M - Select anything within the brackets</li>
+    <li>Control + Shift + M - Select anything within the brackets</li>
     <li>Command + Control + G - Select any instance of the highlighted text</li>
   </ul><br></p>
 
