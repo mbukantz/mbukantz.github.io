@@ -4,7 +4,7 @@
   <title><![CDATA[The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-11-28T22:36:07-05:00</updated>
+  <updated>2015-12-02T08:49:49-05:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -69,7 +69,7 @@
   </p>
 
   <p>
-    Within Ember, Robin touches on using large fonts with <em>emphasis</em> markers.  In addition, each page (movies, tv shows,etc.) should have separate routes set in the router.  He stresses the use of Ember components to build out projects like the demo application posted above.  As technology continues to evolve, our views on tradiitonal devices such as televisions must also evolve.  Ember has much more functionality than I even knew.
+    Within Ember, Robin touches on using large fonts with <em>emphasis</em> markers.  In addition, each page (movies, tv shows,etc.) should have separate routes set in the router.  He stresses the use of Ember components to build out projects like the demo application posted above.  As technology continues to evolve, our views on traditional devices such as televisions must also evolve.  Ember has much more functionality than I even knew.
   </p>
 ]]></content>
   </entry>
