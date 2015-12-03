@@ -3,7 +3,7 @@ layout: post
 title: "Unary Operators in Ruby"
 date: 2015-10-10 10:15:36 -0400
 comments: true
-categories:flatiron_School
+categories: flatiron_School
 ---
 
 As I begin the third week in the Flatiron School's immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3...2...1!
@@ -16,7 +16,7 @@ Next, I'll briefly touch on binary operators.  There are many instances where sy
 
 <center><img src="../images/binary_screenshot.png"></center>
 
-Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.  
+Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.
 
 <b>Opposite Operator (!)</b>
 
@@ -26,7 +26,7 @@ The opposite operator is used to represent the opposite of whatever it is placed
 
 <b>Positive/Negative Operators (+/-)</b>
 
-When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.  
+When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.
 
 <b>The Bitwise Complement (~)</b>
 
@@ -34,13 +34,11 @@ The bitwise complement operator is slightly more involved than the previous thre
 
 <center><img src="../images/bitwise_complement.png"></center>
 
-<b><u>Unary Operator Reassignment</u></b> 
+<b><u>Unary Operator Reassignment</u></b>
 
 One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class "ReassignmentString" that inherits from the "String" class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:
 
 <center><img src="../images/reassignment.png"></center>
 <center><img src="../images/reassignment_output.png"></center>
 
-In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.   
-
-
+In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.
