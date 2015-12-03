@@ -1,4 +1,104 @@
-As I begin the third week in the Flatiron School's immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3...2...1!
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
+	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<meta charset="utf-8">
+	<title>Unary Operators in Ruby  | The Flatiron Experience</title>
+
+<meta name="author" content="Michael Bukantz"> 
+
+<meta name="description" content="Technical blog of my experience at Flatiron School and beyond"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="The Flatiron Experience" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.fancybox.pack.js"></script>
+
+<script language="Javascript" type="text/javascript">
+$(document).ready(
+  function() {
+    (function($) {
+      $(".fancybox[data-content-id]").each(function() {
+        this.href = $(this).data('content-id');
+      });
+      $(".fancybox").fancybox({
+        beforeLoad: function() {
+          var el, 
+              id = $(this.element).data('title-id');
+
+          if (id) {
+            el = $('#' + id);
+
+            if (el.length) {
+              this.title = el.html();
+            }
+          }
+          if ($(this).data('content')) {
+            this.content = $(this).data('content');
+          }
+        },
+        helpers: {
+          title: {
+            type: 'inside'
+          }
+        }
+      });
+    })(jQuery);
+  }
+);
+</script>
+
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><h1><a href="/">The Flatiron Experience</a></h1>
+<h4>A technical blog documenting my journey</h4>
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="/archives">Archive</a></li>
+</ul>
+</div>
+	</div>
+	<div class="alignright search">
+		<a class="button"></a>
+		<div class="container">
+			<form action="https://www.google.com/search" method="get">
+				<input type="text" name="q" results="0">
+				<input type="hidden" name="q" value="site:mbukantz.github.io">
+			</form>
+		</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Unary Operators in Ruby</h2>
+	<div class="entry-content">As I begin the third week in the Flatiron School's immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3...2...1!
 
 There is only one ternary operator in Ruby, which is a conditional expression (if/else) pared down to one line.  Ruby, as a language, is always looking to simplify the syntax of its code and allow us to build clean, concise code.  Here is a snapshot of how a ternary operator behaves:
 
@@ -8,7 +108,7 @@ Next, I'll briefly touch on binary operators.  There are many instances where sy
 
 <center><img src="../images/binary_screenshot.png"></center>
 
-Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.  
+Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.
 
 <b>Opposite Operator (!)</b>
 
@@ -18,7 +118,7 @@ The opposite operator is used to represent the opposite of whatever it is placed
 
 <b>Positive/Negative Operators (+/-)</b>
 
-When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.  
+When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.
 
 <b>The Bitwise Complement (~)</b>
 
@@ -26,13 +126,76 @@ The bitwise complement operator is slightly more involved than the previous thre
 
 <center><img src="../images/bitwise_complement.png"></center>
 
-<b><u>Unary Operator Reassignment</u></b> 
+<b><u>Unary Operator Reassignment</u></b>
 
 One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class "ReassignmentString" that inherits from the "String" class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:
 
 <center><img src="../images/reassignment.png"></center>
 <center><img src="../images/reassignment_output.png"></center>
 
-In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.   
+In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.
+</div>
 
 
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-10-10T10:15:36-04:00" pubdate data-updated="true"></time></div>
+	
+
+<div class="tags">
+
+	<a class='category' href='/blog/categories/flatiron-school/'>flatiron_school</a>
+
+</div>
+
+
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+	<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Michael Bukantz
+
+<br>
+Powered by Octopress.
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+
+
+
+
+</body>
+</html>

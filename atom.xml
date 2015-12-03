@@ -4,7 +4,7 @@
   <title><![CDATA[The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-12-02T08:49:49-05:00</updated>
+  <updated>2015-12-03T08:39:51-05:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -19,7 +19,7 @@
     <updated>2015-11-28T21:50:06-05:00</updated>
     <id>http://mbukantz.github.io/blog/2015/11/28/ember-and-tvs</id>
     <content type="html"><![CDATA[<p>
-  I was watching a <a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">video</a> from a talk by Robin Ward at the Embergarten Saturday Symposium in 2014, and I was intrigued by his discussion about mixing Ember and TV.  In the past week, our cohort has been working within the Ember framework to build simple web applications that refresh on the client side without reloading the entire page.  In Robin's talk, he goes into detail about some of the history of browser applications before he gets to the TV part, so I will summarize some of the key points.
+  I was watching a <a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">video</a> from a talk titled "Ember at 10 Feet" by Robin Ward at the Embergarten Saturday Symposium in 2014, and I was intrigued by his discussion about mixing Ember and TV.  In the past week, our cohort has been working within the Ember framework to build simple web applications that refresh on the client side without reloading the entire page.  In Robin's talk, he goes into detail about some of the history of browser applications before he gets to the TV part, so I will summarize some of the key points.
 </p>
 
 <h3>History</h3>
@@ -34,7 +34,7 @@
   <li>We now have platform that allows us to "write once, run anywhere"</li>
  <li>Robin doesn't like the term "Single Page Applications" and he prefers "Browser Applications"<ul>
    <li>It is same as describing car as "horseless carriage"</li>
-   <li>It's describing what it isn't as opposed to what it is</li>
+   <li>It's describing what it isn't (multi-page site) as opposed to what it is (browser application run through the DOM)</li>
  </ul></li>
 </ul>
 
@@ -44,18 +44,29 @@
     <li>Runs in web browser</li>
     <li>Written in JavaScript</li>
   </ol>
-  <ul>
-    <li>Ember</li>
-    <li>Angular</li>
-  </ul>
 
-<h4>Examples:</h4>
-  <ul>
-    <li>Social: Gmail, Slack</li>
-    <li>Games: 2048</li>
-    <li>Video: Vine, Twitch</li>
-    <li>Atom.io</li>
-  </ul>
+  <h4>Frameworks</h4>
+    <ul>
+      <li>Ember</li>
+      <li>Angular</li>
+    </ul>
+
+  <h4>Examples:</h4>
+    <ul>
+      <li>Social: Gmail, Slack</li>
+      <li>Games: 2048</li>
+      <li>Video: Vine, Twitch</li>
+      <li>Atom.io</li>
+    </ul>
+
+    <h4>Browsers are Everywhere</h4>
+    <ul>
+      <li>Desktop</li>
+      <li>Mobile</li>
+      <li>Tablets</li>
+      <li>TVs</li>
+      <li>WATCHES!</li>
+    </ul>
 
   <h3>Ember and Televisions</h3>
   <ul>
@@ -70,6 +81,11 @@
 
   <p>
     Within Ember, Robin touches on using large fonts with <em>emphasis</em> markers.  In addition, each page (movies, tv shows,etc.) should have separate routes set in the router.  He stresses the use of Ember components to build out projects like the demo application posted above.  As technology continues to evolve, our views on traditional devices such as televisions must also evolve.  Ember has much more functionality than I even knew.
+  </p>
+
+  <h4>Sources:</h4>
+  <p>
+    <a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">"http://eviltrout.com/2014/12/22/watch-ember-tv.html"</a>
   </p>
 ]]></content>
   </entry>
@@ -215,9 +231,9 @@ In conclusion, I hope this was a helpful overview of some neat Sublime shorcuts,
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Unary Operators In Ruby]]></title>
+    <title type="html"><![CDATA[Unary Operators in Ruby]]></title>
     <link href="http://mbukantz.github.io/blog/2015/10/10/unary-operators-in-ruby/"/>
-    <updated>2015-10-10T00:00:00-04:00</updated>
+    <updated>2015-10-10T10:15:36-04:00</updated>
     <id>http://mbukantz.github.io/blog/2015/10/10/unary-operators-in-ruby</id>
     <content type="html"><![CDATA[As I begin the third week in the Flatiron School's immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3...2...1!
 
@@ -229,7 +245,7 @@ Next, I'll briefly touch on binary operators.  There are many instances where sy
 
 <center><img src="../images/binary_screenshot.png"></center>
 
-Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.  
+Now, let's get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.
 
 <b>Opposite Operator (!)</b>
 
@@ -239,7 +255,7 @@ The opposite operator is used to represent the opposite of whatever it is placed
 
 <b>Positive/Negative Operators (+/-)</b>
 
-When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.  
+When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.
 
 <b>The Bitwise Complement (~)</b>
 
@@ -247,16 +263,14 @@ The bitwise complement operator is slightly more involved than the previous thre
 
 <center><img src="../images/bitwise_complement.png"></center>
 
-<b><u>Unary Operator Reassignment</u></b> 
+<b><u>Unary Operator Reassignment</u></b>
 
 One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class "ReassignmentString" that inherits from the "String" class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:
 
 <center><img src="../images/reassignment.png"></center>
 <center><img src="../images/reassignment_output.png"></center>
 
-In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.   
-
-
+In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.
 ]]></content>
   </entry>
   

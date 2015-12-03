@@ -4,7 +4,7 @@
   <title><![CDATA[Category: flatiron_school | The Flatiron Experience]]></title>
   <link href="http://mbukantz.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
   <link href="http://mbukantz.github.io/"/>
-  <updated>2015-12-02T08:49:49-05:00</updated>
+  <updated>2015-12-03T08:39:51-05:00</updated>
   <id>http://mbukantz.github.io/</id>
   <author>
     <name><![CDATA[Michael Bukantz]]></name>
@@ -12,6 +12,94 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ember and TVs]]></title>
+    <link href="http://mbukantz.github.io/blog/2015/11/28/ember-and-tvs/"/>
+    <updated>2015-11-28T21:50:06-05:00</updated>
+    <id>http://mbukantz.github.io/blog/2015/11/28/ember-and-tvs</id>
+    <content type="html"><![CDATA[<p>
+  I was watching a <a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">video</a> from a talk titled "Ember at 10 Feet" by Robin Ward at the Embergarten Saturday Symposium in 2014, and I was intrigued by his discussion about mixing Ember and TV.  In the past week, our cohort has been working within the Ember framework to build simple web applications that refresh on the client side without reloading the entire page.  In Robin's talk, he goes into detail about some of the history of browser applications before he gets to the TV part, so I will summarize some of the key points.
+</p>
+
+
+
+
+<h3>History</h3>
+
+
+<ul>
+  <li>There is only one point in civilization's history that connects everything together</li>
+  <li>The problem: applications are platform specific</li>
+  <li>The dream: universal applications (platform agnostic)
+  <ul>
+    <li>Java come close, but it is ultimately huge failure in accomplishing universal applications</li>
+    <li>JavaScript is not the "hero we needed, but the one we deserved"</li>
+  </ul></li>
+  <li>We now have platform that allows us to "write once, run anywhere"</li>
+ <li>Robin doesn't like the term "Single Page Applications" and he prefers "Browser Applications"<ul>
+   <li>It is same as describing car as "horseless carriage"</li>
+   <li>It's describing what it isn't (multi-page site) as opposed to what it is (browser application run through the DOM)</li>
+ </ul></li>
+</ul>
+
+
+
+
+<h3>Browser Applications</h3>
+
+
+<p>  <ol>
+    <li>Has access to DOM</li>
+    <li>Runs in web browser</li>
+    <li>Written in JavaScript</li>
+  </ol></p>
+
+<p>  <h4>Frameworks</h4>
+    <ul>
+      <li>Ember</li>
+      <li>Angular</li>
+    </ul></p>
+
+<p>  <h4>Examples:</h4>
+    <ul>
+      <li>Social: Gmail, Slack</li>
+      <li>Games: 2048</li>
+      <li>Video: Vine, Twitch</li>
+      <li>Atom.io</li>
+    </ul></p>
+
+<pre><code>&lt;h4&gt;Browsers are Everywhere&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Desktop&lt;/li&gt;
+  &lt;li&gt;Mobile&lt;/li&gt;
+  &lt;li&gt;Tablets&lt;/li&gt;
+  &lt;li&gt;TVs&lt;/li&gt;
+  &lt;li&gt;WATCHES!&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>  <h3>Ember and Televisions</h3>
+  <ul>
+    <li>Ember is great platform for writing browser applications</li>
+    <li>TVs can run web browsers</li>
+    <li>Ember should be great for writing an application that runs on a TV</li>
+  </ul></p>
+
+<p>  <p>
+    We are not talking about a smart TV, but more in the line of ChromeCast or Apple TV.  Using Ember allows us to use URLs, since you can pass a URL around from one device to another seamlessly.  In addition, if your TV application is linked up to a website, you can make updates to the application whenever you want.  Lastly, TVs are now run on phones, tablets, and other devices, so the concept of a television has evolved from the traditional sense of the word.  Here is a <a href="http://embertv.eviltrout.com/browse/root">demo</a> that Robin created in Ember.  While the demo is tested with a keyboard and mouse, it should theoretically simulate using a traditional remote control.
+  </p></p>
+
+<p>  <p>
+    Within Ember, Robin touches on using large fonts with <em>emphasis</em> markers.  In addition, each page (movies, tv shows,etc.) should have separate routes set in the router.  He stresses the use of Ember components to build out projects like the demo application posted above.  As technology continues to evolve, our views on traditional devices such as televisions must also evolve.  Ember has much more functionality than I even knew.
+  </p></p>
+
+<p>  <h4>Sources:</h4>
+  <p>
+    <a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">&ldquo;<a href="http://eviltrout.com/2014/12/22/watch-ember-tv.html">http://eviltrout.com/2014/12/22/watch-ember-tv.html</a>&rdquo;</a>
+  </p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sublime 201: Tips, Tricks, and Packages]]></title>
@@ -181,6 +269,57 @@
 
 
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unary Operators in Ruby]]></title>
+    <link href="http://mbukantz.github.io/blog/2015/10/10/unary-operators-in-ruby/"/>
+    <updated>2015-10-10T10:15:36-04:00</updated>
+    <id>http://mbukantz.github.io/blog/2015/10/10/unary-operators-in-ruby</id>
+    <content type="html"><![CDATA[<p>As I begin the third week in the Flatiron School&rsquo;s immersive web program, I wanted to write about operators in Ruby.  I will focus mainly on unary operators in this post, so let me count down from 3&hellip;2&hellip;1!</p>
+
+<p>There is only one ternary operator in Ruby, which is a conditional expression (if/else) pared down to one line.  Ruby, as a language, is always looking to simplify the syntax of its code and allow us to build clean, concise code.  Here is a snapshot of how a ternary operator behaves:</p>
+
+<center><img src="../images/ternary_screenshot.png"></center>
+
+
+<p>Next, I&rsquo;ll briefly touch on binary operators.  There are many instances where syntactic sugar in Ruby displays cleaner code at the expense of new programmers understanding what is truly happening.  The most simplistic representation of a binary operator would be addition.  When addition is displayed in Ruby, it appears as &ldquo;a + b&rdquo;.  However, it is actually calling the &ldquo;+&rdquo; method on b, or a.+(b).  &ldquo;a&rdquo; and &ldquo;b&rdquo; represent the two parties in the binary operator.</p>
+
+<center><img src="../images/binary_screenshot.png"></center>
+
+
+<p>Now, let&rsquo;s get to the meat of this discussion: unary operators.  A unary operator is an operator which only takes a single argument in the form of a receiver.  I will first discuss the four unary operators that come up most frequently, and I will also touch on unary operator reassignment.</p>
+
+<p><b>Opposite Operator (!)</b></p>
+
+<p>The opposite operator is used to represent the opposite of whatever it is placed in front of.  For example, !true is equal to false and !false is equal to true.  You can put ! in front of an equal sign to represent &ldquo;not equal to&rdquo;, and you can even place it in front of a method to test equality.  Here is some code in irb to indicate these concepts:</p>
+
+<center><img src="../images/negative_operator.png"></center>
+
+
+<p><b>Positive/Negative Operators (+/-)</b></p>
+
+<p>When a plus or minus sign is placed in front of an Integer or a Float and there is no argument before the sign, it will represent a positive or negative interpretation of the value.  This is different than the addition or subtraction methods which we discussed earlier.</p>
+
+<p><b>The Bitwise Complement (~)</b></p>
+
+<p>The bitwise complement operator is slightly more involved than the previous three operators.  A number is depicted by 8 bits.  For example, the integer 2 is represented by 0000 0010.  When we run the ~2 operator, it inverts all of the 0&rsquo;s and 1&rsquo;s and adds one to the bitwise value.  The resulting bitwise value is 1111 1101.  This represents -3.  If you were to run the ~-3, it would return 2 as the complement.  Here is a snapshot in irb:</p>
+
+<center><img src="../images/bitwise_complement.png"></center>
+
+
+<p><b><u>Unary Operator Reassignment</u></b></p>
+
+<p>One of the neat things about unary operators is that they are not set in stone.  You are able to leverage the @ sign to reassign the +/- operators and use them however you like.  While this may not be the smartest way to set up a method, as the !, +, and - functionality is often used in code, it is nice to know how to do this.  In the example below, I have created a class &ldquo;ReassignmentString&rdquo; that inherits from the &ldquo;String&rdquo; class.  Within the class, there are 4 methods that will reassign the behavior of a string through upcase, downcase, swapcase, and capitalize:</p>
+
+<center><img src="../images/reassignment.png"></center>
+
+
+<center><img src="../images/reassignment_output.png"></center>
+
+
+<p>In conclusion, unary operators are a shorter way to represent control flow.  Instead of having to write if/else statements to depict equality, the ! sign does it for us.  In addition, the + and - signs allow us to seamlessly integrate positive and negatives values into our code.  Lastly, the involved ~ operator allows us to delve into the bitwise values of integers to see the bitwise complement.</p>
 ]]></content>
   </entry>
   
