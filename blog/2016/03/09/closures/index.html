@@ -5,7 +5,7 @@
 	<script data-cfasync="false" type="text/javascript" src="//use.typekit.net/axj3cfp.js"></script>
 	<script data-cfasync="false" type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<meta charset="utf-8">
-	<title>A technical blog documenting my journey  | The Flatiron Experience</title>
+	<title>Closures  | The Flatiron Experience</title>
 
 <meta name="author" content="Michael Bukantz"> 
 
@@ -96,13 +96,78 @@ $(document).ready(
 
 </header>
 
-	<div id="content" class="inner">
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">Closures</h2>
+	<div class="entry-content"><p>
+  In this post, I will dive into an important concept in JavaScript and its frameworks, closures. Closures may appear intimidating at first, but they allow developers to write better code.  Let's touch on:
+</p>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+<ul>
+  <li>What are closures?</li>
+  <li>Closure Rules</li>
+  <li>Debugging closures</li>
+  <li>Simple Example</li>
+  <li>jQuery Example</li>
+</ul>
+
+<h3>What are closures?</h3>
+
+<p>
+  A <b>closure</b> is an inner function that has access to the outer or enclosing function's variables and scope chain.  The scope chain indicates that the inner function can access its own variables, its enclosing function's variables, and global variables.  Global variables refer to the variables set outside of any functions in the program, but can be referenced by any function.  In addition to variables, the inner function can also access the outer function's parameters.
+</p>
+
+<h3>Closure Rules</h3>
+
+<p>
+  <b>1. Closures have access to the outer function's variables even after the outer function has returned.</b>  This can be demonstrated by the simplest of examples:
+</p>
+
+<img src="../images/obama.png">
+
+<p>
+  In the example above, the president function is contained within the president Intro function.  The president function has one variable, the president's ranking, while the presidentIntro function has the president's name.  Outside of each function, we set a variable obama equal to the presidentIntro function with an argument of "Obama".  This will return the president function, with the argument attached, as this is the return value of the presidentIntro function.  When we call the obama variable with a ranking argument of "44th", the return value will be "Obama is the 44th president."
+</p>
+
+<p>
+  <b>2. Closures store reference to the outer function's variables.</b>  This can be demonstrated in an example with get and set inner functions.  When the get inner function 
+</p>
+</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-03-09T11:13:06-05:00" pubdate data-updated="true"></time></div>
+	
+
+
+	
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+<!---	<a class="addthis_counter addthis_pill_style"></a> --->
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2016
 
     Michael Bukantz
